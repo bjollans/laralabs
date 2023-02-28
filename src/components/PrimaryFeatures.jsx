@@ -15,7 +15,7 @@ const features = [
   {
     name: 'Concept Art',
     description:
-      'Focus on creative thinking not repetitive drawing',
+      'Focus on creative thinking not repetitive drawing.',
     href: '#',
     icon: CloudIcon,
     image: conceptImg
@@ -23,7 +23,7 @@ const features = [
   {
     name: '2D / 3D Assets',
     description:
-      'Create thousands of assets in your art style',
+      'Create thousands of assets in your art style.',
     href: '#',
     icon: PencilIcon,
     image: assetsImg
@@ -31,7 +31,7 @@ const features = [
   {
     name: '2D / 3D Animations',
     description:
-      'Complex character animations in less time',
+      'Complex character animations in less time.',
     href: '#',
     icon: PaperAirplaneIcon,
     image: animationImg
@@ -39,7 +39,7 @@ const features = [
   {
     name: 'Level & Environment Design',
     description:
-      'Easy environments- and levels for a great gameplay experience',
+      'Easy environments- and levels for a great gameplay experience.',
     href: '#',
     icon: EyeIcon,
     image: environmentImg
