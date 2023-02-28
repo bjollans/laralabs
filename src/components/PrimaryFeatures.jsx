@@ -6,24 +6,25 @@ import styleImg from '@/images/style.png'
 import adaptImg from '@/images/adapt.png'
 
 const features = [
+
   {
-    name: 'Generate',
+    name: 'Choose your style',
     description:
-      'Generate assets and choose favorites from variations.',
-    href: '#',
-    icon: BoltIcon,
-    image: generateImg
-  },
-  {
-    name: 'Your Style',
-    description:
-      'Create assets that are consistent with the art style of your game.',
+      'Select an art style from our library or apply your own by uploading your game art.',
     href: '#',
     icon: CheckIcon,
     image: styleImg
   },
   {
-    name: 'Adapt',
+    name: 'Generate assets',
+    description:
+      'Generate game assets and then choose your favorite AI-generated variation.',
+    href: '#',
+    icon: BoltIcon,
+    image: generateImg
+  },
+  {
+    name: 'Adapt & stay in control',
     description:
       'Make changes or edits to the assets during or after the design process.',
     href: '#',

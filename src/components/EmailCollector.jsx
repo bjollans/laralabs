@@ -1,19 +1,30 @@
 import { ArrowSmallRightIcon } from '@heroicons/react/20/solid'
+import React, { useState } from 'react';
 
 export function EmailCollector() {
+
+    const [email, setEmail] = useState("");
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        fetch("https://6x2rd73ie4x4pvh6wte32nsavq0uwlwv.lambda-url.eu-central-1.on.aws/" + email)
+    }
+
     return (
       <div className="bg-white py-16 sm:py-24 lg:py-32">
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-8 lg:px-8">
           <div className="max-w-xl text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:col-span-7">
             <h2 className="inline sm:block lg:inline xl:block">Signup for early access</h2>{' '}
           </div>
-          <form className="w-full max-w-md lg:col-span-5 lg:pt-2">
+          <form className="w-full max-w-md lg:col-span-5 lg:pt-2" onSubmit={sendEmail}>
             <div className="flex gap-x-4">
               <label htmlFor="email-address" className="sr-only">
                 your email address...
               </label>
               <input
                 id="email-address"
+                value={email}
+                onChange={e=>setEmail(e.target.value)}
                 name="email"
                 type="email"
                 autoComplete="email"

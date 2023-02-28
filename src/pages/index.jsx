@@ -11,6 +11,12 @@ import { EmailCollector } from '@/components/EmailCollector'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { Testimonials } from '@/components/Testimonials'
 
+export async function getStaticProps(context) {
+  return {
+    props: {},
+  }
+}
+
 export default function Home() {
   return (
     <>
