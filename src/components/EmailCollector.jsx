@@ -8,7 +8,7 @@ export function EmailCollector() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        fetch("https://6x2rd73ie4x4pvh6wte32nsavq0uwlwv.lambda-url.eu-central-1.on.aws/?mail=" + email)
+        fetch("https://email.laralabs.co/?mail=" + email)
         setEmailSent(true)
     }
 
