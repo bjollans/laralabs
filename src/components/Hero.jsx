@@ -11,7 +11,7 @@ import logoTuple from '@/images/logos/tuple.svg'
 
 export function Hero() {
   return (
-    <Container className="pt-20 pb-16 text-center lg:pt-32">
+    <Container className="pt-20 text-center lg:pt-32">
       <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-700 sm:text-7xl">
         More content. {' '}
         <span className="relative whitespace-nowrap text-violet-700">
@@ -28,7 +28,7 @@ export function Hero() {
         
       </h1>
       <p className="mx-auto mt-6 max-w-3xl text-lg tracking-tight text-slate-700">
-        Create thousands of game assets in your own art style quickly, augmented by AI!
+      Building a set of generative AI tools to augment the design process and improve art related pipelines in gaming
       </p>
     </Container>
   )

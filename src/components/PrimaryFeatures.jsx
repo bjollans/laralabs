@@ -1,44 +1,57 @@
-import { PencilIcon, BoltIcon, CheckIcon } from '@heroicons/react/20/solid'
+import { PencilIcon, BoltIcon, CheckIcon, CloudIcon, PaperAirplaneIcon, EyeIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
 
 import generateImg from '@/images/generate.png'
 import styleImg from '@/images/style.png'
 import adaptImg from '@/images/adapt.png'
 
+import conceptImg from '@/images/concept.png'
+import assetsImg from '@/images/assets.jpeg'
+import animationImg from '@/images/animation.png'
+import environmentImg from '@/images/environment.jpeg'
+
 const features = [
 
   {
-    name: 'Choose your style',
+    name: 'Concept Art',
     description:
-      'Select an art style from our library or apply your own by uploading your game art.',
+      'Focus on creative thinking not repetitive drawing',
     href: '#',
-    icon: CheckIcon,
-    image: styleImg
+    icon: CloudIcon,
+    image: conceptImg
   },
   {
-    name: 'Generate assets',
+    name: '2D / 3D Assets',
     description:
-      'Generate game assets and then choose your favorite AI-generated variation.',
-    href: '#',
-    icon: BoltIcon,
-    image: generateImg
-  },
-  {
-    name: 'Adapt & stay in control',
-    description:
-      'Make changes or edits to the assets during or after the design process.',
+      'Create thousands of assets in your art style',
     href: '#',
     icon: PencilIcon,
-    image: adaptImg
+    image: assetsImg
+  },
+  {
+    name: '2D / 3D Animations',
+    description:
+      'Complex character animations in less time',
+    href: '#',
+    icon: PaperAirplaneIcon,
+    image: animationImg
+  },
+  {
+    name: 'Level & Environment Design',
+    description:
+      'Easy environments- and levels for a great gameplay experience',
+    href: '#',
+    icon: EyeIcon,
+    image: environmentImg
   },
 ]
 
 export function PrimaryFeatures() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white py-10 sm:py-10">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-4">
             {features.map((feature) => (
               <div key={feature.name} className="flex flex-col">
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
